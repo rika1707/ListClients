@@ -24,6 +24,7 @@ Base URL: `http://localhost:5127/api/clients/`
 | POST   | `/`                              | Create a new client           |
 | PUT    | `/{id}`                          | Update an existing client     |
 | DELETE | `/{id}`                          | Delete a client by ID         |
+| GET    | `/download-excel`                | Get Excel of Clients          |
 
 ### Example:
 
