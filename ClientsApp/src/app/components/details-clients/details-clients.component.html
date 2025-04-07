@@ -1,0 +1,21 @@
+<main class="p-10">
+  <button mat-icon-button aria-label="go to the previous page" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <section class="my-4">
+    <h1 class="text-2xl font-bold text-center mb-3">DETAILS CLIENT</h1>
+    <section *ngIf="client" class="flex gap-2">
+      <div>
+        <p><span class="font-bold">Name:</span> {{client.name}}</p>
+        <p><span class="font-bold">Direction:</span> {{client.direction}}</p>
+        <p><span class="font-bold">PhoneNumber:</span> {{client.phoneNumber}}</p>
+      </div>
+      <div>
+        <p><span class="font-bold">Latitude:</span> {{client.latitude}}</p>
+        <p><span class="font-bold">Longitude:</span> {{client.longitude}}</p>
+      </div>
+    </section>
+  </section>
+  <app-maps  *ngIf="client" [client]="client"></app-maps>
+</main>
+
