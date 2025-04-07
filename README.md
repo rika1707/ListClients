@@ -5,6 +5,8 @@ This project contains a full-stack application divided into two parts:
 - `APIClients`: Backend built with .NET 8 (ASP.NET Core Web API)
 - `ClientsApp`: Frontend built with Angular
 
+Each project has its own readme explaining its functionality.
+
 ---
 
 ## 🔁 Clone the repository
