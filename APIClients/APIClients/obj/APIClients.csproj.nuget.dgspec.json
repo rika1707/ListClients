@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Ricardo\\Documents\\PruebaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Ricardo\\Documents\\PruebaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj",
         "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ricardo\\Documents\\PruebaTecnicaZina\\APIClients\\APIClients\\obj\\",
+=======
+    "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj",
+        "projectName": "APIClients",
+        "projectPath": "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\obj\\",
+>>>>>>> main
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

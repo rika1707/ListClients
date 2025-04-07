@@ -6,7 +6,11 @@
    <div class="row">
      <p *ngIf="userFormControls.name && userFormControls.name.invalid && userFormControls.name.touched">
        <span *ngIf="userFormControls.name.errors?.['required']" class="text-red-500">The name is requiered</span>
+<<<<<<< HEAD
        <span *ngIf="userFormControls.userName.errors?.['minlength']" class="text-red-500">Must have at least 4 characters</span>
+=======
+       <span *ngIf="userFormControls.name.errors?.['minlength']" class="text-red-500">Must have at least 4 characters</span>
+>>>>>>> main
      </p>
     <mat-form-field appearance="fill" class="w-full">
         <mat-label>
