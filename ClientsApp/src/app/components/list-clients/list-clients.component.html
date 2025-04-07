@@ -4,6 +4,8 @@
 </h1>
 <main class="p-10">
   <div class="flex justify-end py-2 pr-2 gap-3">
+    <mat-spinner *ngIf="loadingExcel" diameter="30"></mat-spinner>
+    <span *ngIf="loadingExcel">Generating Excel...</span>
     <button mat-flat-button (click)="downloadExcel()" style="background-color: #1b8005;">Export Excel</button>
     <button mat-flat-button (click)="openDialogAddClient()">Add Client</button>
   </div>

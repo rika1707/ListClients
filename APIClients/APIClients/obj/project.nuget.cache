@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iOJYsewE65A=",
+  "dgSpecHash": "UcjlVQ5sxTI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ricardo\\Documents\\PruebaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj",
+  "projectFilePath": "C:\\Users\\Ricardo\\Documents\\PrubaTecnicaZina\\APIClients\\APIClients\\APIClients.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ricardo\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Ricardo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
