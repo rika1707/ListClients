@@ -1,0 +1,49 @@
+<div mat-dialog-title>
+  <h1>{{getTitle()}} Client</h1>
+</div>
+<form [formGroup]="userForm" (submit)="onSubmitUser()">
+  <div mat-dialog-content>
+   <div class="row">
+     <p *ngIf="userFormControls.name && userFormControls.name.invalid && userFormControls.name.touched">
+       <span *ngIf="userFormControls.name.errors?.['required']" class="text-red-500">The name is requiered</span>
+       <span *ngIf="userFormControls.userName.errors?.['minlength']" class="text-red-500">Must have at least 4 characters</span>
+     </p>
+    <mat-form-field appearance="fill" class="w-full">
+        <mat-label>
+          Name
+        </mat-label>
+        <input matInput type="text" formControlName="name">
+      </mat-form-field>
+    </div>
+    <p *ngIf="userFormControls.direction && userFormControls.direction.invalid && userFormControls.direction.touched">
+      <span *ngIf="userFormControls.direction.errors?.['required']" class="text-red-500">The direction is requiered</span>
+      <span *ngIf="userFormControls.direction.errors?.['minlength']" class="text-red-500">Must have at least 4 characters</span>
+    </p>
+   <div class="row">
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>
+        Direction
+      </mat-label>
+        <input matInput type="text" formControlName="direction">
+    </mat-form-field>
+   </div>
+   <p *ngIf="userFormControls.phoneNumber && userFormControls.phoneNumber.invalid && userFormControls.phoneNumber.touched">
+    <span *ngIf="userFormControls.phoneNumber.errors?.['required']" class="text-red-500">The phoneNumber is requiered</span>
+    <span *ngIf="userFormControls.phoneNumber.errors?.['minlength']" class="text-red-500">Must have at least 10 numbers</span>
+  </p>
+   <div class="row">
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>
+        PhoneNumber
+      </mat-label>
+        <input matInput type="text" formControlName="phoneNumber">
+    </mat-form-field>
+   </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="false" (click)="onNoClick()">Cancelar</button>
+    <button mat-raised-button color="primary" [disabled]="!userForm.valid" [ngClass]="{'btn-accept':userForm.valid}" type="submit">{{getTitle()}}</button>
+  </div>
+</form>
+
+
